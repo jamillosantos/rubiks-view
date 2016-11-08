@@ -50,16 +50,14 @@ in the same order they arrive on the server.
 
 **Parameters**:
 
-    *face*: `(required)` The face that will be rotated. Possible values: (
-        `front`, `back`, `right`, `left`, `up`, `down`)
+*face*: `(required)` The face that will be rotated. Possible values: (`front`,
+`back`, `right`, `left`, `up`, `down`)
 
+*times*: `(optional)` `default: 1` Amount of turning. This value can also be
+negative (meaning that the rotation will be counter-clockwise).
 
-    *times*: `(optional)` `default: 1` Amount of turning. This value can also be
-        negative (meaning that the rotation will be counter-clockwise).
-
-
-    *duration*: `(optional)` `default: 0.5` Time that the turn will take (just
-        for a visual effect).
+*duration*: `(optional)` `default: 0.5` Time that the turn will take (just for a
+visual effect).
 
 **Example**:
 ```
