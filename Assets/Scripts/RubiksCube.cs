@@ -105,7 +105,7 @@ public class RubiksCube : MonoBehaviour
 			{
 				Duration = 0.5f,
 				Face = face,
-				Times = 1
+				Times = 1 * (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) ? -1 : 1)
 			});
 		}
 
