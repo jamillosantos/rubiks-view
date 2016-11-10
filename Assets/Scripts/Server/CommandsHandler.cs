@@ -5,6 +5,7 @@ using System;
 using System.Net;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace server
 {
@@ -64,6 +65,10 @@ namespace server
 			{
 				this.rotate((JObject)obj["params"]);
 			}
+			else if (commandName == "message")
+			{
+				this.message((JObject)obj["params"]);
+			}
 			else if (commandName == "reset")
 			{
 				this.reset();
@@ -115,6 +120,12 @@ namespace server
 				}
 			}
 			this.cube.Rotate(rotation);
+		}
+
+
+		private void message(JObject obj)
+		{
+			Message.Instance.Text = (string)obj["message"];
 		}
 
 		private void reset()
