@@ -60,8 +60,8 @@ public class RubiksCube : MonoBehaviour
 			piece.transform.SetParent(this.transform, false);
 		}
 
-		this.Front = new RubiksFace(this, Vector3.forward);
-		this.Back = new RubiksFace(this, Vector3.back);
+		this.Front = new RubiksFace(this, Vector3.back);
+		this.Back = new RubiksFace(this, Vector3.forward);
 		this.Right = new RubiksFace(this, Vector3.right);
 		this.Left = new RubiksFace(this, Vector3.left);
 		this.Up = new RubiksFace(this, Vector3.up);
